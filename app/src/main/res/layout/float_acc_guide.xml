@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+  <TextView
+	android:id="@+id/tvShow"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="请找到微信并且打开"
+	android:textColor="#0000ff"
+	android:textSize="20sp" />
+    <TextView
+	android:id="@+id/tv0"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="0................0%"
+	android:textColor="#00ff00"
+	android:textSize="20sp" />
+  <TextView
+	android:id="@+id/tv1"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="1................0%"
+	android:textColor="#00ff00"
+	android:textSize="20sp" />
+  <TextView
+	android:id="@+id/tv2"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="2................0%"
+	android:textColor="#00ff00"
+	android:textSize="20sp" />
+  <TextView
+	android:id="@+id/tv3"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="3................0%"
+	android:textColor="#00ff00"
+	android:textSize="20sp" />
+  <TextView
+	android:id="@+id/tv4"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="4................0%"
+	android:textColor="#00ff00"
+	android:textSize="20sp" />
+  <TextView
+	android:id="@+id/tv5"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="5................0%"
+	android:textColor="#00ff00"
+	android:textSize="20sp" />
+  <TextView
+	android:id="@+id/tv6"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="6................0%"
+	android:textColor="#00ff00"
+	android:textSize="20sp" />
+  <TextView
+	android:id="@+id/tv7"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="7................0%"
+	android:textColor="#00ff00"
+	android:textSize="20sp" />
+  <TextView
+	android:id="@+id/tv8"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="8................0%"
+	android:textColor="#00ff00"
+	android:textSize="20sp" />
+  <TextView
+	android:id="@+id/tv9"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="9................0%"
+	android:textColor="#00ff00"
+	android:textSize="20sp" />
+          
+  <TextView
+	android:id="@+id/tvHide"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:gravity="center"
+	android:text="请找到微信并且打开"
+	android:textColor="#0000ff"
+	android:textSize="20sp" />
+</LinearLayout>

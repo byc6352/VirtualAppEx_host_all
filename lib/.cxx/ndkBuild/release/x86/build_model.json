@@ -1,0 +1,61 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all",
+      "sdkFolder": "D:\\Android\\Sdk",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\build\\intermediates",
+      "gradleModulePathName": ":lib",
+      "moduleRootFolder": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib",
+      "makeFile": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\src\\main\\jni\\Android.mk",
+      "buildSystem": "NDK_BUILD",
+      "compilerSettingsCacheFolder": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\.cxx",
+      "cxxFolder": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\.cxx",
+      "ndkFolder": "D:\\Android\\android-ndk-r16b",
+      "ndkVersion": "16.1.4479499",
+      "ndkSupportedAbiList": [
+        "ARMEABI",
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "MIPS",
+        "MIPS64",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [],
+    "cFlagList": [],
+    "cppFlagsList": [],
+    "variantName": "release",
+    "soFolder": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\build\\intermediates\\ndkBuild\\release\\lib",
+    "objFolder": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\build\\intermediates\\ndkBuild\\release\\obj\\local",
+    "jsonFolder": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\.cxx\\ndkBuild\\release",
+    "gradleBuildOutputFolder": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\.cxx\\cxx\\release",
+    "isDebuggableEnabled": false,
+    "validAbiList": [
+      "ARMEABI_V7A",
+      "X86"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "X86",
+  "abiPlatformVersion": 14,
+  "cxxBuildFolder": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\.cxx\\ndkBuild\\release\\x86",
+  "jsonFile": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\.cxx\\ndkBuild\\release\\x86\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\.cxx\\cxx\\release\\x86",
+  "objFolder": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\build\\intermediates\\ndkBuild\\release\\obj\\local\\x86",
+  "buildCommandFile": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\.cxx\\ndkBuild\\release\\x86\\build_command.txt",
+  "buildOutputFile": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\.cxx\\ndkBuild\\release\\x86\\build_output.txt",
+  "modelOutputFile": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\.cxx\\ndkBuild\\release\\x86\\build_model.json",
+  "jsonGenerationLoggingRecordFile": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\.cxx\\ndkBuild\\release\\x86\\json_generation_record.json",
+  "compileCommandsJsonFile": "D:\\works\\android\\as\\virtualapp\\VirtualAppEx_host_all\\lib\\.cxx\\ndkBuild\\release\\x86\\compile_commands.json"
+}

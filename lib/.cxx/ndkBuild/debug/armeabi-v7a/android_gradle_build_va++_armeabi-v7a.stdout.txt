@@ -1,0 +1,3 @@
+Android NDK: WARNING: Ignoring unknown import directory: :D:/works/android/as/virtualapp/VirtualAppEx_host_all/lib/src/main/jni    
+Android NDK: WARNING:D:/works/android/as/virtualapp/VirtualAppEx_host_all/lib/src/main/jni/fb/Android.mk:fb: LOCAL_LDLIBS is always ignored for static libraries    
+make: Nothing to be done for `va++'.

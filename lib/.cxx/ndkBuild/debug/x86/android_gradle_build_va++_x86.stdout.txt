@@ -1,0 +1,29 @@
+Android NDK: WARNING: Ignoring unknown import directory: :D:/works/android/as/virtualapp/VirtualAppEx_host_all/lib/src/main/jni    
+Android NDK: WARNING:D:/works/android/as/virtualapp/VirtualAppEx_host_all/lib/src/main/jni/fb/Android.mk:fb: LOCAL_LDLIBS is always ignored for static libraries    
+[x86] Compile++      : va++ <= VAJni.cpp
+[x86] Compile++      : va++ <= IOUniformer.cpp
+[x86] Compile++      : va++ <= VMPatch.cpp
+[x86] Compile++      : va++ <= SymbolFinder.cpp
+[x86] Compile++      : va++ <= Path.cpp
+[x86] Compile++      : va++ <= SandboxFs.cpp
+[x86] Compile        : va++ <= hde64.c
+[x86] Compile++      : va++ <= SubstrateDebug.cpp
+[x86] Compile++      : va++ <= SubstrateHook.cpp
+[x86] Compile++      : va++ <= SubstratePosixMemory.cpp
+[x86] Compile++      : fb <= assert.cpp
+[x86] Compile++      : fb <= ByteBuffer.cpp
+[x86] Compile++      : fb <= Countable.cpp
+[x86] Compile++      : fb <= Environment.cpp
+[x86] Compile++      : fb <= Exceptions.cpp
+[x86] Compile++      : fb <= fbjni.cpp
+[x86] Compile++      : fb <= Hybrid.cpp
+[x86] Compile++      : fb <= jni_helpers.cpp
+[x86] Compile++      : fb <= LocalString.cpp
+[x86] Compile++      : fb <= OnLoad.cpp
+[x86] Compile++      : fb <= References.cpp
+[x86] Compile++      : fb <= WeakReference.cpp
+[x86] Compile++      : fb <= log.cpp
+[x86] Compile++      : fb <= lyra.cpp
+[x86] Compile++      : fb <= onload.cpp
+[x86] StaticLibrary  : libfb.a
+[x86] SharedLibrary  : libva++.so
